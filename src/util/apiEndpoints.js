@@ -1,4 +1,4 @@
-const BASE_URL = 'https://ezcloudshare-backend.onrender.com/api/v1.0';
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://ezcloudshare-backend.onrender.com/api/v1.0';
 
 export const apiEndpoints = {
         FETCH_FILES: `${BASE_URL}/files/my`,
