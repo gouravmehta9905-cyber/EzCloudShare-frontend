@@ -50,8 +50,8 @@ const SideMenu = ({ activeMenu }) => {
 
         {showContact && (
           <div className="mt-2 text-xs text-gray-500 space-y-1">
-            <p>+91 8578020529</p>
-            <p>adityakumarhzb01@gmail.com</p>
+            <p>+91 9999999999</p>
+            <p>gourav@example.com</p>
           </div>
         )}
       </div>
