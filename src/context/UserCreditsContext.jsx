@@ -74,7 +74,7 @@ import { useAuth } from "@clerk/clerk-react";
 export const UserCreditsContext = createContext();
 
 export const UserCreditsProvider = ({ children }) => {
-  const [credits, setCredits] = useState(0);
+  const [credits, setCredits] = useState(100);
   const [loading, setLoading] = useState(false);
 
   const { getToken, isSignedIn } = useAuth();

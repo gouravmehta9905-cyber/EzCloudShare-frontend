@@ -15,7 +15,7 @@ const Upload = () => {
   const [messageType, setMessageType] = React.useState(""); //succes or error
   const {getToken}=useAuth() || {};
   const {credits,refreshCredits}=React.useContext(UserCreditsContext);
-  const MAX_FILES=5;
+  const MAX_FILES=10;
 
   const handleFileChange=(e)=>{
     const selectedFiles=Array.from(e.target.files);
@@ -89,9 +89,9 @@ const Upload = () => {
   const isUploadDisabled =
   uploading ||
   files.length === 0 ||
-  credits <= 0 ||
+  credits < 10 ||
   files.length > MAX_FILES ||
-  files.length > credits;
+  (files.length * 10) > credits;
 
 
 
